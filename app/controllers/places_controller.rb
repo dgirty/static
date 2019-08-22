@@ -1,4 +1,10 @@
 class PlacesController < ApplicationController
   def index
-  end  
+    @places = Place.all
+  end
+
+  def new
+    @place = Place.new
+  end
 end
+
